@@ -1,0 +1,22 @@
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+.calc {
+    display: flex;
+    height: 600px;
+    width: 400px;
+
+    flex-wrap: wrap;
+}
+
+.display {
+    height: 50px;
+    width: 100px;
+}
+
+button {
+    height: 50px;
+    width: 80px;
+}
