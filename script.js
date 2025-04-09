@@ -1,4 +1,6 @@
-
+//variables for operations
+var num1 = 0
+var num2 = 0
 
 //Query selectors
 const c1 = document.querySelector("#1")
@@ -42,3 +44,5 @@ div.addEventListener("click", () => {})
 equal.addEventListener("click", () => {})
 ac.addEventListener("click", () => {})
 del.addEventListener("click", () => {})
+
+//operate function 
