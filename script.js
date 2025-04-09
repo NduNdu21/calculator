@@ -1,6 +1,7 @@
 //variables for operations
-/*var num1 = 0
-var num2 = 0*/
+var number1
+var number2
+var operand
 
 //Query selectors
 const c1 = document.querySelector("#1")
