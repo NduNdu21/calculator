@@ -1,6 +1,6 @@
 //variables for operations
-var num1 = 0
-var num2 = 0
+/*var num1 = 0
+var num2 = 0*/
 
 //Query selectors
 const c1 = document.querySelector("#1")
@@ -45,4 +45,19 @@ equal.addEventListener("click", () => {})
 ac.addEventListener("click", () => {})
 del.addEventListener("click", () => {})
 
-//operate function 
+//functions 
+const addFunc = (num1, num2) => {
+    return num1 + num2
+}
+
+const subFunc = (num1, num2) => {
+    return num1 - num2
+}
+
+const divFunc = (num1, num2) => {
+    return num1 / num2
+}
+
+const multFunc = (num1, num2) => {
+    return num1 * num2
+}
