@@ -62,3 +62,21 @@ const divFunc = (num1, num2) => {
 const multFunc = (num1, num2) => {
     return num1 * num2
 }
+
+//operate function
+const operate = (num1, num2, oper) => {
+    switch (oper) {
+        case "+":
+            return addFunc(num1, num2);
+        break;
+        case "-":
+            return subFunc(num1, num2);
+        break;
+        case "/":
+            return divFunc(num1, num2);
+        break;
+        case "*":
+            return multFunc(num1, num2);
+        break;
+    }
+}
