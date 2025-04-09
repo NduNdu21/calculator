@@ -24,3 +24,21 @@ const display = document.querySelector(".display")
 
 
 //Event listeners
+c1.addEventListener("click", () => {})
+c2.addEventListener("click", () => {})
+c3.addEventListener("click", () => {})
+c4.addEventListener("click", () => {})
+c5.addEventListener("click", () => {})
+c6.addEventListener("click", () => {})
+c7.addEventListener("click", () => {})
+c8.addEventListener("click", () => {})
+c9.addEventListener("click", () => {})
+c0.addEventListener("click", () => {})
+
+add.addEventListener("click", () => {})
+sub.addEventListener("click", () => {})
+mult.addEventListener("click", () => {})
+div.addEventListener("click", () => {})
+equal.addEventListener("click", () => {})
+ac.addEventListener("click", () => {})
+del.addEventListener("click", () => {})
