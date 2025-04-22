@@ -3,17 +3,17 @@ var number1
 var number2
 var operand
 
-/*Query selectors
-const c1 = document.querySelector("#1")
-const c2 = document.querySelector("#2")
-const c3 = document.querySelector("#3")
-const c4 = document.querySelector("#4")
-const c5 = document.querySelector("#5")
-const c6 = document.querySelector("#6")
-const c7 = document.querySelector("#7")
-const c8 = document.querySelector("#8")
-const c9 = document.querySelector("#9")
-const c0 = document.querySelector("#0")
+//Query selectors
+const c1 = document.querySelector("#num1")
+const c2 = document.querySelector("#num2")
+const c3 = document.querySelector("#num3")
+const c4 = document.querySelector("#num4")
+const c5 = document.querySelector("#num5")
+const c6 = document.querySelector("#num6")
+const c7 = document.querySelector("#num7")
+const c8 = document.querySelector("#num8")
+const c9 = document.querySelector("#num9")
+const c0 = document.querySelector("#num0")
 
 const add = document.querySelector("#add")
 const sub = document.querySelector("#sub")
@@ -44,7 +44,7 @@ mult.addEventListener("click", () => {})
 div.addEventListener("click", () => {})
 equal.addEventListener("click", () => {})
 ac.addEventListener("click", () => {})
-del.addEventListener("click", () => {})*/
+del.addEventListener("click", () => {})
 
 //functions 
 const addFunc = (num1, num2) => {
@@ -80,5 +80,3 @@ const operate = (num1, num2, oper) => {
         break;
     }
 }
-
-console.log(operate(2, 3, "+"))
