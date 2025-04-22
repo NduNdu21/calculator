@@ -25,18 +25,40 @@ const del = document.querySelector("#DEL")
 
 const display = document.querySelector(".display")
 
+var displayText = document.getElementById("displayText")
 
 //Event listeners
-c1.addEventListener("click", () => {})
-c2.addEventListener("click", () => {})
-c3.addEventListener("click", () => {})
-c4.addEventListener("click", () => {})
-c5.addEventListener("click", () => {})
-c6.addEventListener("click", () => {})
-c7.addEventListener("click", () => {})
-c8.addEventListener("click", () => {})
-c9.addEventListener("click", () => {})
-c0.addEventListener("click", () => {})
+c1.addEventListener("click", () => {
+    displayText.textContent += "1"
+})
+c2.addEventListener("click", () => {
+    displayText.textContent += "2"
+})
+c3.addEventListener("click", () => {
+    displayText.textContent += "3"
+})
+c4.addEventListener("click", () => {
+    displayText.textContent += "4"
+})
+c5.addEventListener("click", () => {
+    displayText.textContent += "5"
+})
+c6.addEventListener("click", () => {
+    displayText.textContent += "6"
+})
+c7.addEventListener("click", () => {
+    displayText.textContent += "7"
+})
+c8.addEventListener("click", () => {
+    displayText.textContent += "8"
+})
+c9.addEventListener("click", () => {
+    displayText.textContent += "9"
+})
+c0.addEventListener("click", () => {
+    displayText.textContent += "0"
+})
+
 
 add.addEventListener("click", () => {})
 sub.addEventListener("click", () => {})
