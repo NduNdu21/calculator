@@ -3,7 +3,7 @@ var number1
 var number2
 var operand
 
-//Query selectors
+/*Query selectors
 const c1 = document.querySelector("#1")
 const c2 = document.querySelector("#2")
 const c3 = document.querySelector("#3")
@@ -44,7 +44,7 @@ mult.addEventListener("click", () => {})
 div.addEventListener("click", () => {})
 equal.addEventListener("click", () => {})
 ac.addEventListener("click", () => {})
-del.addEventListener("click", () => {})
+del.addEventListener("click", () => {})*/
 
 //functions 
 const addFunc = (num1, num2) => {
@@ -80,3 +80,5 @@ const operate = (num1, num2, oper) => {
         break;
     }
 }
+
+console.log(operate(2, 3, "+"))
