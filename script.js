@@ -60,12 +60,22 @@ c0.addEventListener("click", () => {
 })
 
 
-add.addEventListener("click", () => {})
-sub.addEventListener("click", () => {})
-mult.addEventListener("click", () => {})
-div.addEventListener("click", () => {})
+add.addEventListener("click", () => {
+    displayText.textContent += "+"
+})
+sub.addEventListener("click", () => {
+    displayText.textContent += "-"
+})
+mult.addEventListener("click", () => {
+    displayText.textContent += "*"
+})
+div.addEventListener("click", () => {
+    displayText.textContent += "/"
+})
 equal.addEventListener("click", () => {})
-ac.addEventListener("click", () => {})
+ac.addEventListener("click", () => {
+    displayText.textContent = ""
+})
 del.addEventListener("click", () => {})
 
 //functions 
