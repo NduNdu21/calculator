@@ -25,54 +25,67 @@ const del = document.querySelector("#DEL")
 
 const display = document.querySelector(".display")
 
-var displayText = document.getElementById("displayText")
+var displayText = document.getElementById("displayText").textContent
 
 //Event listeners
+//Digits
 c1.addEventListener("click", () => {
-    displayText.textContent += "1"
+    displayText += "1"
 })
 c2.addEventListener("click", () => {
-    displayText.textContent += "2"
+    displayText += "2"
 })
 c3.addEventListener("click", () => {
-    displayText.textContent += "3"
+    displayText += "3"
 })
 c4.addEventListener("click", () => {
-    displayText.textContent += "4"
+    displayText += "4"
 })
 c5.addEventListener("click", () => {
-    displayText.textContent += "5"
+    displayText += "5"
 })
 c6.addEventListener("click", () => {
-    displayText.textContent += "6"
+    displayText += "6"
 })
 c7.addEventListener("click", () => {
-    displayText.textContent += "7"
+    displayText += "7"
 })
 c8.addEventListener("click", () => {
-    displayText.textContent += "8"
+    displayText += "8"
 })
 c9.addEventListener("click", () => {
-    displayText.textContent += "9"
+    displayText += "9"
 })
 c0.addEventListener("click", () => {
-    displayText.textContent += "0"
+    displayText += "0"
 })
 
-
+//Operations
 add.addEventListener("click", () => {
-    displayText.textContent += "+"
+    displayText += "+"
 })
 sub.addEventListener("click", () => {
-    displayText.textContent += "-"
+    displayText += "-"
 })
 mult.addEventListener("click", () => {
-    displayText.textContent += "*"
+    displayText += "*"
 })
 div.addEventListener("click", () => {
-    displayText.textContent += "/"
+    displayText += "/"
 })
-equal.addEventListener("click", () => {})
+
+//Equals
+equal.addEventListener("click", () => {
+    operPos = displayText.search(/[+\-*/]/)
+
+    var first = displayText.slice(0, operPos)
+    var second = displayText.slice(operPos + 1, displayText.length - 1)
+    var oper = displayText.charAt(operPos)
+
+    displayText = operate(first, second, oper)
+})
+
+//Clearing display
 ac.addEventListener("click", () => {
     displayText.textContent = ""
 })
