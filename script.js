@@ -101,7 +101,7 @@ const subFunc = (num1, num2) => {
 }
 
 const divFunc = (num1, num2) => {
-    return num1 / num2
+    return Math.round((num1 / num2) * 100000) / 100000
 }
 
 const multFunc = (num1, num2) => {
