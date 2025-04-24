@@ -25,64 +25,64 @@ const del = document.querySelector("#DEL")
 
 const display = document.querySelector(".display")
 
-var displayText = document.getElementById("displayText").textContent
+var displayText = document.getElementById("displayText")
 
 //Event listeners
 //Digits
 c1.addEventListener("click", () => {
-    displayText += "1"
+    displayText.textContent += "1"
 })
 c2.addEventListener("click", () => {
-    displayText += "2"
+    displayText.textContent += "2"
 })
 c3.addEventListener("click", () => {
-    displayText += "3"
+    displayText.textContent += "3"
 })
 c4.addEventListener("click", () => {
-    displayText += "4"
+    displayText.textContent += "4"
 })
 c5.addEventListener("click", () => {
-    displayText += "5"
+    displayText.textContent += "5"
 })
 c6.addEventListener("click", () => {
-    displayText += "6"
+    displayText.textContent += "6"
 })
 c7.addEventListener("click", () => {
-    displayText += "7"
+    displayText.textContent += "7"
 })
 c8.addEventListener("click", () => {
-    displayText += "8"
+    displayText.textContent += "8"
 })
 c9.addEventListener("click", () => {
-    displayText += "9"
+    displayText.textContent += "9"
 })
 c0.addEventListener("click", () => {
-    displayText += "0"
+    displayText.textContent += "0"
 })
 
 //Operations
 add.addEventListener("click", () => {
-    displayText += "+"
+    displayText.textContent += "+"
 })
 sub.addEventListener("click", () => {
-    displayText += "-"
+    displayText.textContent += "-"
 })
 mult.addEventListener("click", () => {
-    displayText += "*"
+    displayText.textContent += "*"
 })
 div.addEventListener("click", () => {
-    displayText += "/"
+    displayText.textContent += "/"
 })
 
 //Equals
 equal.addEventListener("click", () => {
-    operPos = displayText.search(/[+\-*/]/)
+    operPos = displayText.textContent.search(/[+\-*/]/)
 
-    var first = displayText.slice(0, operPos)
-    var second = displayText.slice(operPos + 1, displayText.length - 1)
-    var oper = displayText.charAt(operPos)
+    var first = Number(displayText.textContent.slice(0, operPos))
+    var second = Number(displayText.textContent.slice(operPos + 1, displayText.textContent.length))
+    var oper = displayText.textContent.charAt(operPos)
 
-    displayText = operate(first, second, oper)
+    displayText.textContent = operate(first, second, oper)
 })
 
 //Clearing display
