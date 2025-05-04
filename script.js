@@ -62,7 +62,11 @@ c0.addEventListener("click", () => {
 
 //Operations
 add.addEventListener("click", () => {
-    displayText.textContent += "+"
+    if (displayText.textContent.search(/[+\-*/]/) !== -1) {
+        equal.click()
+    } else {
+        displayText.textContent += "+"
+    }
 })
 sub.addEventListener("click", () => {
     displayText.textContent += "-"
