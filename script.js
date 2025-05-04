@@ -89,6 +89,18 @@ equal.addEventListener("click", () => {
     displayText.textContent = operate(first, second, oper)
 })
 
+//function to handle calculation
+function calculateExp() {
+    let text = displayText.textContent
+    let operPos = text.search(/[+\-*/]/)
+
+    var first = Number(text.slice(0, operPos))
+    var second = Number(text.slice(operPos + 1,))
+    var oper = text.charAt(operPos)
+
+    displayText.textContent = operate(first, second, oper)
+}
+
 //Clearing display
 ac.addEventListener("click", () => {
     displayText.textContent = ""
