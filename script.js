@@ -61,13 +61,7 @@ c0.addEventListener("click", () => {
 })
 
 //Operations
-add.addEventListener("click", () => {
-    if (displayText.textContent.search(/[+\-*/]/) !== -1) {
-        equal.click()
-    } else {
-        displayText.textContent += "+"
-    }
-})
+add.addEventListener("click", () => {insertOper("+")})
 sub.addEventListener("click", () => {
     displayText.textContent += "-"
 })
@@ -91,6 +85,15 @@ function calculateExp() {
     var oper = text.charAt(operPos)
 
     displayText.textContent = operate(first, second, oper)
+}
+
+//function to insert operator sign
+function insertOper(op) {
+    if (displayText.textContent.search(/[+\-*/]/) !== -1) {
+        calculateExp()
+    }
+
+    displayText.textContent += op
 }
 
 //Clearing display
