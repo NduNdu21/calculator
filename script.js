@@ -83,7 +83,7 @@ function calculateExp() {
 
 //function to insert operator sign
 function insertOper(op) {
-    if (displayText.textContent.search(/[+\-*/]/) !== -1) {
+    if (displayText.textContent.search(/[+\-*/]/) !== -1) { //test if there is an operator in the display before inserting a new one
         calculateExp()
     } 
 
