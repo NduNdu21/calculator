@@ -62,15 +62,9 @@ c0.addEventListener("click", () => {
 
 //Operations
 add.addEventListener("click", () => {insertOper("+")})
-sub.addEventListener("click", () => {
-    displayText.textContent += "-"
-})
-mult.addEventListener("click", () => {
-    displayText.textContent += "*"
-})
-div.addEventListener("click", () => {
-    displayText.textContent += "/"
-})
+sub.addEventListener("click", () => {insertOper("-")})
+mult.addEventListener("click", () => {insertOper("*")})
+div.addEventListener("click", () => {insertOper("/")})
 
 //Equals
 equal.addEventListener("click", () => {calculateExp()})
@@ -91,7 +85,7 @@ function calculateExp() {
 function insertOper(op) {
     if (displayText.textContent.search(/[+\-*/]/) !== -1) {
         calculateExp()
-    }
+    } 
 
     displayText.textContent += op
 }
