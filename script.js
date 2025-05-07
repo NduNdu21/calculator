@@ -94,7 +94,11 @@ function insertOper(op) {
 ac.addEventListener("click", () => {
     displayText.textContent = ""
 })
-del.addEventListener("click", () => {})
+del.addEventListener("click", () => {
+    let text = displayText.textContent.slice(0, displayText.textContent.length - 1)
+
+    displayText.textContent = text
+})
 
 //functions 
 const addFunc = (num1, num2) => {
